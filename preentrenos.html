@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preentrenos</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('https://i.ibb.co/nqyf21zY/Fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header, footer {
+      font-family: 'Courier New', monospace;
+      background-color: #2c2e2e;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1a1a1a;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      padding: 5px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    nav a.active {
+      background-color: #444;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    h1, h2 {
+      margin: 1rem;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .protes {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .protes img {
+      width: 350px;
+      height: 350px;
+      margin: 1rem 0;
+    }
+
+    footer {
+      font-family: 'Courier New', monospace;
+      background-color: #2c2e2e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .protes p {
+      margin: 1rem;
+    }
+
+    .ingredient {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .ingredient h3 {
+      color: #4CAF50;
+    }
+
+    .preentreno-types {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .preentreno-card {
+      width: 380px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .preentreno-images {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .product-image {
+      width: 35%;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 5px;
+    }
+
+    .nutrition-image {
+      width: 60%;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 5px;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .nutrition-image img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .image-label {
+      font-size: 12px;
+      margin-top: 5px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pre-entrenos</h1>
+    <h4>Todo sobre proteínas y pre-entrenos</h4>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="proteinas.html">Proteínas</a>
+    <a href="preentrenos.html" class="active">Pre-entrenos</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>¿Qué son los pre-entrenos?</h2>
+      <p>
+        Los preentrenos son suplementos diseñados para tomarse antes del ejercicio, generalmente entre 20 y 30 minutos antes de comenzar el entrenamiento. 
+        Están formulados para proporcionar energía, mejorar el enfoque mental, aumentar la resistencia y potenciar el rendimiento durante las sesiones de ejercicio.
+      </p>
+      <p>
+        Estos suplementos suelen contener una combinación de ingredientes como cafeína, beta-alanina, creatina, aminoácidos, vitaminas y otros compuestos que trabajan 
+        en sinergia para maximizar tu capacidad de entrenamiento y ayudarte a superar tus límites.
+      </p>
+    </section>
+
+    <section>
+      <h2>Ingredientes comunes en los pre-entrenos</h2>
+      
+      <div class="ingredient">
+        <h3>Cafeína</h3>
+        <p>
+          La cafeína es uno de los ingredientes más comunes en los pre-entrenos. Actúa como estimulante del sistema nervioso central, 
+          aumentando el estado de alerta, reduciendo la percepción de fatiga y mejorando el rendimiento físico. Las dosis típicas 
+          en pre-entrenos varían entre 150-300 mg por porción.
+        </p>
+      </div>
+      
+      <div class="ingredient">
+        <h3>Beta-Alanina</h3>
+        <p>
+          La beta-alanina es un aminoácido que ayuda a aumentar los niveles de carnosina en los músculos, lo que puede retrasar la fatiga 
+          durante ejercicios de alta intensidad. Es responsable de la sensación de hormigueo (parestesia) que muchas personas experimentan 
+          al tomar pre-entrenos.
+        </p>
+      </div>
+      
+      <div class="ingredient">
+        <h3>Citrulina Malato</h3>
+        <p>
+          La citrulina malato ayuda a aumentar la producción de óxido nítrico en el cuerpo, lo que dilata los vasos sanguíneos y mejora 
+          el flujo sanguíneo a los músculos. Esto puede resultar en mejores bombeos musculares, mayor resistencia y mejor recuperación.
+        </p>
+      </div>
+      
+      <div class="ingredient">
+        <h3>Creatina</h3>
+        <p>
+          La creatina es uno de los suplementos más estudiados y efectivos. Ayuda a regenerar ATP (la principal fuente de energía para 
+          contracciones musculares de alta intensidad), lo que puede aumentar la fuerza, potencia y rendimiento en ejercicios de alta intensidad.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tipos de Pre-entrenos</h2>
+      
+      <div class="preentreno-types">
+        <div class="preentreno-card">
+          <h3>Pre-entrenos con Estimulantes</h3>
+          
+          <div class="preentreno-images">
+            <div class="product-image">
+              <img src="https://i.ibb.co/qYKsVKXb/vinferno1.png" alt="Preentreno con estimulantes">
+              <div class="image-label">Producto</div>
+            </div>
+            <div class="nutrition-image">
+              <img src="https://i.ibb.co/m55TYyV4/vinferno.png" alt="Tabla nutricional">
+              <div class="image-label">Tabla Nutricional</div>
+            </div>
+          </div>
+          
+          <p>
+            Contienen cafeína y otros estimulantes para proporcionar energía y enfoque. Son ideales para entrenamientos intensos 
+            o cuando necesitas un impulso extra de energía.
+          </p>
+        </div>
+        
+        <div class="preentreno-card">
+          <h3>Pre-entrenos sin Estimulantes</h3>
+          
+          <div class="preentreno-images">
+            <div class="product-image">
+              <img src="https://i.ibb.co/zhhBr5t5/psin.png" alt="Preentreno sin estimulantes">
+              <div class="image-label">Producto</div>
+            </div>
+            <div class="nutrition-image">
+              <img src="https://i.ibb.co/wF2Crqvn/psinT.png" alt="Tabla nutricional">
+              <div class="image-label">Tabla Nutricional</div>
+            </div>
+          </div>
+          
+          <p>
+            No contienen cafeína ni otros estimulantes. Son perfectos para personas sensibles a la cafeína o para entrenamientos 
+            nocturnos cuando no quieres afectar tu sueño.
+          </p>
+        </div>
+        
+        <div class="preentreno-card">
+          <h3>Pre-entrenos Naturales</h3>
+          
+          <div class="preentreno-images">
+            <div class="product-image">
+              <img src="https://i.ibb.co/SwghsHnk/pN.png" alt="Preentreno natural">
+              <div class="image-label">Producto</div>
+            </div>
+            <div class="nutrition-image">
+              <img src="https://i.ibb.co/RGkn6yvK/pn-T-1-1.png" alt="Tabla nutricional">
+              <div class="image-label">Tabla Nutricional</div>
+            </div>
+          </div>
+          
+          <p>
+            Formulados con ingredientes naturales como extractos de plantas y hierbas. Son una buena opción para quienes prefieren 
+            evitar ingredientes sintéticos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cuándo y Cómo Tomar Pre-entrenos</h2>
+      <p>
+        Para obtener los mejores resultados, los pre-entrenos deben tomarse aproximadamente 20-30 minutos antes de comenzar el entrenamiento. 
+        Esto da tiempo suficiente para que los ingredientes sean absorbidos y comiencen a hacer efecto.
+      </p>
+      <p>
+        Es importante seguir las instrucciones de dosificación del fabricante y no exceder la dosis recomendada. Comenzar con media dosis 
+        puede ser una buena idea para evaluar tu tolerancia, especialmente si eres sensible a la cafeína u otros estimulantes.
+      </p>
+      <p>
+        También es recomendable ciclar el uso de preentrenos (por ejemplo, usarlos durante 3-4 semanas y luego descansar 1-2 semanas) 
+        para evitar desarrollar tolerancia a sus efectos.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Suplementos Fitness - Página informativa</p>
+    <p>Autor: Erick Valladares</p>
+  </footer>
+</body>
+</html>
